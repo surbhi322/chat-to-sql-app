@@ -1,5 +1,5 @@
 langchain
 langchain-community
-langchain-openai
+langchain-google-genai
 streamlit
 pysqlite3-binary
