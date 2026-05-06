@@ -34,7 +34,7 @@ if api_key:
         db = SQLDatabase.from_uri("sqlite:///example.db")
         
         # Using Gemini instead of OpenAI
-        llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", google_api_key=api_key, temperature=0)
+        llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key, temperature=0)
         
         agent = create_sql_agent(llm, db=db, verbose=True, agent_type="zero-shot-react-description")
         
